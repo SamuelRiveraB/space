@@ -1,0 +1,49 @@
+.container {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    padding-top: 3rem;
+    transform: perspective(1px);
+}
+
+.left-side {
+    color: #FFF;
+    margin: 8vw 0 0 15vw;
+    width: 28vw;
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+.pre-space {
+    font-size: 1.7vw;
+}
+
+.space {
+    font-size: 9.6vw;
+    margin: 0;
+}
+
+.post-space {
+    font-size: 1.3vw;
+}
+
+.right-side {
+    margin: 20vw 0 0 10vw;
+}
+
+.circle {
+    justify-content: center;
+    padding: 10vw 0 0 0;
+    height: 20vh;
+    width: 15vw;
+    background-color: #FFF;
+    border-radius: 50%;
+}
+
+.circle:hover {
+    border: 5rem solid rgb(128, 128, 128);
+    margin: -5px;
+}
+
+.explore {
+    font-size: 3vw;
+}
