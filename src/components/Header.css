@@ -1,24 +1,24 @@
 .header {
     display: grid;
     grid-template-columns: 40% 60%;
-    font-size:2rem;
-    transition: all 0.3s linear;
-    padding-top: 3rem;
+    font-size:1.2vmax;
+    padding-top: 1.9vmax;
 }
 
 .left-header {
     text-align: left;
-    padding: 2.3rem 0 0 5rem;
+    padding: 1.3vmax 0 0 3vmax;
 }
 
 .logo {
-    height: 3rem;
-    width: 3rem;
+    height: 2vmax;
+    width: 2vmax;
+    margin: .1vmax 0 0 0;
 }
 
 .line {
     position: absolute;
-    margin-top: 1.4rem;
+    margin-top: 1vmax;
     margin-left: 3vw;
     display:inline-block;
     width: 34vw;
@@ -27,17 +27,18 @@
 
 .right-header {
    background-color: rgba(255, 255, 255, 0.04);
-   height: 6rem;
-   width: 60vw;
+   height: 4vmax;
+   width: 60vmax;
    display: inline-block;
-   padding: 1.5rem 0 0;
+   padding: .8vmax 0 0;
 }
 
 .header-menus {
     justify-content: center;
     display: flex;
     list-style: none;
-    font-size: 0.7em;
+    font-size: .8vmax;
+    margin: 1.1vmax 0 0 0;
 }
 
 .menu-number {
@@ -48,15 +49,18 @@
 .menu {
     color: #fff;
     text-decoration: none;
-    margin: 0 2rem;
-    padding: 2.7rem 0 2.8rem 0;
+    margin: 0 1.2vmax;
+    padding: 2vmax 0 1.8vmax 0;
 }
 
 .active {
-    border-bottom: 2px solid white;
+    border-bottom: 3px solid white;
 }
 
 .menu:hover {
-    border-bottom: 2px solid rgb(128, 128, 128);
+    border-bottom: 3px solid rgb(128, 128, 128);
 }
 
+.active:hover {
+    border-bottom: 3px solid white;
+}

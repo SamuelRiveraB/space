@@ -1,7 +1,7 @@
 .container {
     display: grid;
     grid-template-columns: 50% 50%;
-    padding-top: 3rem;
+    padding: 3vh 0;
     transform: perspective(1px);
 }
 
@@ -27,23 +27,30 @@
 }
 
 .right-side {
-    margin: 20vw 0 0 10vw;
+    margin: 16vw 0 0 15vw;
 }
 
 .circle {
-    justify-content: center;
-    padding: 10vw 0 0 0;
-    height: 20vh;
+    height: 15vw;
     width: 15vw;
     background-color: #FFF;
     border-radius: 50%;
+    cursor: pointer;
 }
 
 .circle:hover {
-    border: 5rem solid rgb(128, 128, 128);
-    margin: -5px;
+    outline: 100px solid rgba(0, 0, 0, 0.8);
 }
 
 .explore {
-    font-size: 3vw;
+    font-size: 2.5vw;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.explore:hover {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
 }
