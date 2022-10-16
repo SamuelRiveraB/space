@@ -1,0 +1,22 @@
+.destination-menus {
+    display: flex;
+    list-style: none;
+    margin: 0 0 4vmax 0;
+    padding: 0;
+}
+
+.destination-menu {
+    color: #fff;
+    font-size: 1vmax;
+    text-decoration: none;
+    margin: 0 2vmax 0 0;
+    padding: 1vmax 0 1vmax 0;
+}
+
+.destination-menu:hover {
+    border-bottom: 3px solid rgb(128, 128, 128);
+}
+
+.active:hover {
+    border-bottom: 3px solid white;
+}

@@ -1,0 +1,51 @@
+.crew-container {
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.crew-left-side {
+    color: #FFF;
+    margin: 1vmax 0 0 10vmax;
+    text-align: justify;
+    text-justify: inter-word;
+    padding: 3vmax 0;
+    width: 50vmax;
+}
+
+.meet-your-crew {
+    font-size: 1.5vmax;
+    margin: 0 0 5vmax 0;
+}
+
+.title-number {
+    color: rgb(128, 128, 128);
+    margin: 0 1vmax 0 0;
+    letter-spacing: 0.2vmax;
+}
+
+.crew-title {
+    font-size: 2vmax;
+    margin: 0 1vmax 2.5vmax 0;
+    font-weight: 100;
+}
+
+.crew-name {
+    font-size: 4vmax;
+    margin: 0 1vmax 2.5vmax 0;
+    font-weight: 100;
+}
+
+.crew-text {
+    font-size: 1.5vmax;
+    width: 35vmax;
+    height: 9vmax;
+    line-height: 2.2vmax;
+}
+
+.crew-img {
+    position: fixed;
+    width: 40vmax;
+    height: 40vmax;
+    bottom:0px;
+    left:50%;
+}

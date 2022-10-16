@@ -1,0 +1,32 @@
+.technology-menus {
+    display: grid;
+    margin: 5vmax 0 0 0;
+    padding: 0 0 1vmax 0;
+}
+
+.technology-circle {
+    color:rgb(255, 255, 255);
+    height: 5.5vmax;
+    width: 5.5vmax;
+    border: 1px solid rgb(184, 184, 184);
+    border-radius: 50%;
+    cursor: pointer;
+    margin: 0 1vmax 3vmax 0;
+    text-decoration: none;
+}
+
+.technology-circle:hover {
+    border: 1px solid rgb(255, 255, 255);
+}
+
+.technology-active {
+    background-color: rgb(255, 255, 255);
+    border: 1px solid rgb(255, 255, 255);
+    color : #000;
+}
+
+.technology-number {
+    font-size: 2vmax;
+    position: relative;
+    top: 30%;
+}

@@ -1,8 +1,6 @@
 .App {
   text-align: center;
   font-family: "Bellefair", Arial;
-  background: url("./assets/home/background-home-desktop.jpg") no-repeat center center fixed;
-  background-size: 100% 100%;
   width: 100vw;
   height: 100vh;
   overflow: hidden;

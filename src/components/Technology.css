@@ -1,0 +1,56 @@
+.technology-container {
+    display: grid;
+    grid-template-columns: 10% 45% 45%;
+}
+
+.technology-left-side {
+    margin: 5vmax 0 0 11vmax;
+}
+
+.technology-center {
+    color: #FFF;
+    margin: 1vmax 0 0 14vmax;
+    text-align: left;
+    padding: 3vmax 0;
+    width: 50vmax;
+}
+
+.space-launch {
+    position: absolute;
+    font-size: 1.5vmax;
+    left: 10.5vmax;
+    top: 8vmax;
+}
+
+.title-number {
+    color: rgb(128, 128, 128);
+    margin: 0 1vmax 0 0;
+    letter-spacing: 0.2vmax;
+}
+
+.the-terminology {
+    margin: 8vmax 0 1vmax 0;
+    font-size: 1.5vmax;
+    font-weight: 100;
+}
+
+.technology-name {
+    font-size: 4vmax;
+    margin: 0 0 2.5vmax 0;
+    font-weight: 100;
+}
+
+.technology-text {
+    font-size: 1.5vmax;
+    width: 35vmax;
+    height: 9vmax;
+    line-height: 2.2vmax;
+}
+
+.technology-img {
+    position: fixed;
+    width: 35vmax;
+    height: 35vmax;
+    right: 0;
+    top: 25%;
+}
