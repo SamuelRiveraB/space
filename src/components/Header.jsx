@@ -2,6 +2,8 @@ import React from "react";
 import "./Header.css";
 import logo from '../assets/shared/logo.svg';
 import { Outlet, NavLink, useLocation } from "react-router-dom";
+import nav from "../assets/shared/icon-hamburger.svg";
+import close from "../assets/shared/icon-close.svg";
 import img1 from "../assets/home/background-home-desktop.jpg";
 import img2 from "../assets/destination/background-destination-desktop.jpg";
 import img3 from "../assets/crew/background-crew-desktop.jpg";
@@ -19,6 +21,19 @@ function Header() {
         document.getElementsByClassName("full")[0].style.backgroundSize = "100% 100%";
     }
 
+    function navBar() {
+        const navImg = document.getElementsByClassName("nav-btn")[0];
+        const right = document.getElementsByClassName("right-header")[0];
+        if (right.style.visibility === "hidden") {
+            right.style.visibility = "visible";
+            navImg.src = close;
+        } else {
+            right.style.visibility = "hidden";
+            navImg.style.visibility = "visible";
+            navImg.src = nav;
+        }
+    }
+
     return (
         <>
             <div className="full"></div>
@@ -28,6 +43,7 @@ function Header() {
                     <hr className="line"/>
                 </div>
                 <div className="right-header">
+                    <img src={close} className="nav-btn" alt="nav" onClick={navBar}/>
                     <ul className="header-menus">
                         <li><NavLink onClick={() => changeBg(bg1)} className="menu" to="home"><strong className="menu-number">00</strong>HOME</NavLink></li>
                         <li><NavLink onClick={() => changeBg(bg2)} className={({ isActive }) =>  (["/destination/moon", "/destination/mars", "/destination/europa", "/destination/titan"].includes(pathname) ? "menu active":"menu")} to="/destination/moon"><strong className="menu-number">01</strong>DESTINATION</NavLink></li>

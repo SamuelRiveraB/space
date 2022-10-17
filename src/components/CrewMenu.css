@@ -1,26 +1,67 @@
-.crew-menus {
-    display: flex;
-    margin: 5vmax 0 0 0;
-    padding: 0;
+@media (min-width : 320px) {
+    .crew-menus {
+        position: fixed;
+        top: 48%;
+        display: flex;
+        margin: 6vmax 0 0 0;
+        left:50%;
+        transform: translate(-50%);
+        padding: 0;
+        z-index: 100;
+    }
+
+    .menu-circle {
+        height: 2vmax;
+        width: 2vmax;
+        background-color: rgb(128, 128, 128);
+        border-radius: 50%;
+        cursor: pointer;
+        margin: 0 2vmax 0 0;
+    }
+
+    .menu-circle:hover {
+        background-color: rgb(184, 184, 184);
+    }
+
+    .crew-active {
+        background-color: rgb(255, 255, 255);
+    }
+
+    .crew-active:hover {
+        background-color: rgb(255, 255, 255);
+    }
 }
 
-.menu-circle {
-    height: 1.5vmax;
-    width: 1.5vmax;
-    background-color: rgb(128, 128, 128);
-    border-radius: 50%;
-    cursor: pointer;
-    margin: 0 1vmax 0 0;
+@media (min-width : 768px) {
+    .crew-menus {
+        top: 48%;
+        display: flex;
+        margin: 6vmax 0 0 0;
+        left:50%;
+        transform: translate(-50%);
+        padding: 0;
+    }
+
+    .menu-circle {
+        height: 2.5vmax;
+        width: 2.5vmax;
+    }
+
+    .crew-active {
+        background-color: rgb(255, 255, 255);
+    }
 }
 
-.menu-circle:hover {
-    background-color: rgb(184, 184, 184);
-}
+@media (min-width : 1200px) {
+    .crew-menus {
+        all: unset;
+        display: flex;
+        margin: 5vmax 0 0 0;
+        padding: 0;
+    }
 
-.crew-active {
-    background-color: rgb(255, 255, 255);
-}
-
-.crew-active:hover {
-    background-color: rgb(255, 255, 255);
+    .menu-circle {
+        height: 1.5vmax;
+        width: 1.5vmax;
+    }
 }
