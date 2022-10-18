@@ -20,6 +20,7 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Header />}>
+            <Route index element={<Home />} />
             <Route path="home" element={<Home />} />
             <Route path="destination/moon" element={<Destination1 />} />
             <Route path="destination/mars" element={<Destination2 />} />

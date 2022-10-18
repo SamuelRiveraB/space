@@ -2,6 +2,10 @@ import React from "react";
 import "./Home.css";
 
 function Home() {
+    function circleClick() {
+        window.location='/destination/moon';
+    }
+
     return (
         <div>
             <div className="container">
@@ -14,7 +18,7 @@ function Home() {
                     </p>
                 </div>
                 <div className="right-side">
-                    <div className="circle">
+                    <div onClick={circleClick} className="circle">
                         <h2 className="explore">EXPLORE</h2>
                     </div>
                 </div>
