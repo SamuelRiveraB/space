@@ -1,7 +1,3 @@
-.circle:hover {
-    outline: 7vmax solid rgba(0, 0, 0, 0.8);
-}
-
 @media (min-width : 320px) {
     .container {
         display: grid;
@@ -41,6 +37,10 @@
         cursor: pointer;
         display: block;
         margin: 5vmax auto 0;
+    }
+
+    .circle:hover {
+        outline: 7vmax solid #24272f;
     }
     
     .explore {
@@ -91,6 +91,10 @@
         cursor: pointer;
         display: block;
         margin: 5vmax auto 0;
+    }
+
+    .circle:hover {
+        outline: 7vmax solid #24272f;
     }
     
     .explore {
@@ -147,7 +151,7 @@
     }
 
     .circle:hover {
-        outline: 5vmax solid rgba(0, 0, 0, 0.8);
+        outline: 5vmax solid #24272f;
     }
 
     .explore {

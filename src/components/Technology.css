@@ -9,18 +9,21 @@
     }
 
     .technology-center {
+        display: block;
+        margin: 0 auto;
         color: #FFF;
-        margin: 1vmax 0 0 14vmax;
-        text-align: left;
-        padding: 3vmax 0;
-        width: 50vmax;
+        padding: 3vmax;
+        width: 42vmax;
     }
 
     .space-launch {
         position: absolute;
+        width: 40vmax;
         font-size: 1.5vmax;
-        left: 10.5vmax;
-        top: 8vmax;
+        left: 50%;
+        top: 10vmax;
+        letter-spacing: 1vmax;
+        transform: translate(-50%);
     }
 
     .title-number {
@@ -30,8 +33,9 @@
     }
 
     .the-terminology {
-        margin: 8vmax 0 1vmax 0;
-        font-size: 1.5vmax;
+        color: #D0D6F9;
+        margin: 48vmax 0 1vmax 0;
+        font-size: 2vmax;
         font-weight: 100;
     }
 
@@ -42,23 +46,37 @@
     }
 
     .technology-text {
-        font-size: 1.5vmax;
-        width: 35vmax;
+        color: #D0D6F9;
+        font-size: 2.5vmax;
         height: 9vmax;
-        line-height: 2.2vmax;
+        line-height: 3vmax;
     }
 
     .technology-img {
         position: fixed;
-        width: 35vmax;
-        height: 35vmax;
-        right: 0;
-        top: 25%;
+        width: 100%;
+        height: 30vmax;
+        bottom: 37%;
+        left: 50%;
+        transform: translate(-50%, -50%);
     }
 }
 
 @media (min-width : 768px) {
-    
+    .technology-center {
+        display: block;
+        margin: 0 auto;
+        color: #FFF;
+        padding: 3vmax;
+        width: 60vmax;
+    }
+
+    .space-launch {
+        position: absolute;
+        font-size: 1.5vmax;
+        left: 24vmax;
+        top: 10vmax;
+    }
 }
 
 @media (min-width : 1200px) {
@@ -79,10 +97,12 @@
     }
 
     .space-launch {
+        all: unset;
         position: absolute;
         font-size: 1.5vmax;
         left: 10.5vmax;
-        top: 8vmax;
+        top: 11vmax;
+        letter-spacing: 1vmax;
     }
 
     .title-number {
@@ -111,6 +131,7 @@
     }
 
     .technology-img {
+        all: unset;
         position: fixed;
         width: 35vmax;
         height: 35vmax;

@@ -19,8 +19,10 @@
     }
 
     .pick-your-destination {
-        margin: 0 20vmax 3vmax 0;
-        letter-spacing: 0.3vmax;
+        width: 50vmax;
+        font-size: 1.5vmax;
+        margin: 0 0 5vmax 0;
+        letter-spacing: 1vmax;
     }
 
     .destination-img {
@@ -93,12 +95,16 @@
 
     .pick-your-destination {
         font-size: 1.5vmax;
-        margin: 0 40vmax 3vmax 0;
+        margin: 0 40vmax 30vmax 0;
     }
 
     .destination-img {
+        position: fixed;
         width: 25vmax;
         height: 25vmax;
+        left: 50%;
+        top: 20vmax;
+        transform: translate(-50%);
     }
 
     .destination-right-side {
@@ -170,6 +176,7 @@
     }
 
     .destination-img {
+        all: unset;
         width: 25vmax;
         height: 25vmax;
         margin: 3vmax 0 0 9vmax;
