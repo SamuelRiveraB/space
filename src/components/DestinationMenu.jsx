@@ -6,10 +6,10 @@ function DestinationMenu() {
     return (
         <>
             <ul className="destination-menus">
-                <li><NavLink className={({ isActive }) => (isActive ? "destination-menu destination-active":"destination-menu")} to="/space/destination/moon">MOON</NavLink></li>
-                <li><NavLink className={({ isActive }) => (isActive ? "destination-menu destination-active":"destination-menu")} to="/space/destination/mars">MARS</NavLink></li>
-                <li><NavLink className={({ isActive }) => (isActive ? "destination-menu destination-active":"destination-menu")} to="/space/destination/europa">EUROPA</NavLink></li>
-                <li><NavLink className={({ isActive }) => (isActive ? "destination-menu destination-active":"destination-menu")} to="/space/destination/titan">TITAN</NavLink></li>
+                <li><NavLink className={({ isActive }) => (isActive ? "destination-menu destination-active":"destination-menu")} to="/destination/moon">MOON</NavLink></li>
+                <li><NavLink className={({ isActive }) => (isActive ? "destination-menu destination-active":"destination-menu")} to="/destination/mars">MARS</NavLink></li>
+                <li><NavLink className={({ isActive }) => (isActive ? "destination-menu destination-active":"destination-menu")} to="/destination/europa">EUROPA</NavLink></li>
+                <li><NavLink className={({ isActive }) => (isActive ? "destination-menu destination-active":"destination-menu")} to="/destination/titan">TITAN</NavLink></li>
             </ul>
         <Outlet />
         </>

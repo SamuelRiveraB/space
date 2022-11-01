@@ -3,7 +3,7 @@ import "./Home.css";
 
 function Home() {
     function circleClick() {
-        window.location='/space/destination/moon';
+        window.location='/space#/destination/moon';
     }
 
     return (

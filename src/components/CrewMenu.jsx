@@ -6,10 +6,10 @@ function CrewMenu() {
     return (
         <>
             <div className="crew-menus">
-                <NavLink className={({ isActive }) => (isActive ? "menu-circle crew-active":"menu-circle")} to="/space/crew/douglas-hurley"></NavLink>
-                <NavLink className={({ isActive }) => (isActive ? "menu-circle crew-active":"menu-circle")} to="/space/crew/mark-shuttleworth"></NavLink>
-                <NavLink className={({ isActive }) => (isActive ? "menu-circle crew-active":"menu-circle")} to="/space/crew/victor-glover"></NavLink>
-                <NavLink className={({ isActive }) => (isActive ? "menu-circle crew-active":"menu-circle")} to="/space/crew/anousheh-ansari"></NavLink>
+                <NavLink className={({ isActive }) => (isActive ? "menu-circle crew-active":"menu-circle")} to="/crew/douglas-hurley"></NavLink>
+                <NavLink className={({ isActive }) => (isActive ? "menu-circle crew-active":"menu-circle")} to="/crew/mark-shuttleworth"></NavLink>
+                <NavLink className={({ isActive }) => (isActive ? "menu-circle crew-active":"menu-circle")} to="/crew/victor-glover"></NavLink>
+                <NavLink className={({ isActive }) => (isActive ? "menu-circle crew-active":"menu-circle")} to="/crew/anousheh-ansari"></NavLink>
             </div>
         <Outlet />
         </>
