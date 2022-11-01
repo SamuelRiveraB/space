@@ -12,12 +12,12 @@ import Crew4 from "./components/Crew4";
 import Technology1 from "./components/Technology1";
 import Technology2 from "./components/Technology2";
 import Technology3 from "./components/Technology3";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { HashRouter, Routes, Route } from "react-router-dom";
 
 function App() {
   return (
     <div className="App">
-      <BrowserRouter>
+      <HashRouter>
         <Routes>
           <Route path="/space" element={<Header />}>
             <Route index element={<Home />} />
@@ -35,7 +35,7 @@ function App() {
             <Route path="technology/space-capsule" element={<Technology3 />} />
           </Route>
         </Routes>
-      </BrowserRouter>
+      </HashRouter>
     </div>
   );
 }
