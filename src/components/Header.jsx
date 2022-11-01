@@ -108,7 +108,7 @@ function Header() {
     })
 
     function imgClick() {
-        window.location='/home';
+        window.location='/space/home';
     }
 
     return (
@@ -123,9 +123,9 @@ function Header() {
                     <img src={close} className="nav-btn" alt="nav" onClick={navBar}/>
                     <ul className="header-menus">
                         <li><NavLink onClick={() => changeBg(bg1)} className="menu" to="home"><strong className="menu-number">00</strong>HOME</NavLink></li>
-                        <li><NavLink onClick={() => changeBg(bg2)} className={({ isActive }) =>  (["/destination/moon", "/destination/mars", "/destination/europa", "/destination/titan"].includes(pathname) ? "menu active":"menu")} to="/destination/moon"><strong className="menu-number">01</strong>DESTINATION</NavLink></li>
-                        <li><NavLink onClick={() => changeBg(bg3)} className={({ isActive }) =>  (["/crew/douglas-hurley", "/crew/mark-shuttleworth", "/crew/victor-glover", "/crew/anousheh-ansari"].includes(pathname) ? "menu active":"menu")} to="/crew/douglas-hurley"><strong className="menu-number">02</strong>CREW</NavLink></li>
-                        <li><NavLink onClick={() => changeBg(bg4)} className={({ isActive }) =>  (["/technology/launch-vehicle", "/technology/spaceport", "/technology/space-capsule"].includes(pathname) ? "menu active":"menu")} to="/technology/launch-vehicle"><strong className="menu-number">03</strong>TECHNOLOGY</NavLink></li>
+                        <li><NavLink onClick={() => changeBg(bg2)} className={({ isActive }) =>  (["/space/destination/moon", "/space/destination/mars", "/space/destination/europa", "/space/destination/titan"].includes(pathname) ? "menu active":"menu")} to="destination/moon"><strong className="menu-number">01</strong>DESTINATION</NavLink></li>
+                        <li><NavLink onClick={() => changeBg(bg3)} className={({ isActive }) =>  (["/space/crew/douglas-hurley", "/space/crew/mark-shuttleworth", "/space/crew/victor-glover", "/space/crew/anousheh-ansari"].includes(pathname) ? "menu active":"menu")} to="crew/douglas-hurley"><strong className="menu-number">02</strong>CREW</NavLink></li>
+                        <li><NavLink onClick={() => changeBg(bg4)} className={({ isActive }) =>  (["/space/technology/launch-vehicle", "/space/technology/spaceport", "/space/technology/space-capsule"].includes(pathname) ? "menu active":"menu")} to="technology/launch-vehicle"><strong className="menu-number">03</strong>TECHNOLOGY</NavLink></li>
                     </ul>
                 </div>
             </nav>
